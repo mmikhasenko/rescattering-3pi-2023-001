@@ -5,7 +5,13 @@ using Markdown
 using InteractiveUtils
 
 # ╔═╡ f1634740-cfe1-11ed-3804-b74bfa23da7a
-using SymPy
+begin
+	using Pkg
+	Pkg.activate(mktempdir())
+	Pkg.add([
+        	PackageSpec("SymPy")])
+	using SymPy	
+end
 
 # ╔═╡ afc4e979-e5f0-495b-a10e-c1bca0845dc7
 md"""
