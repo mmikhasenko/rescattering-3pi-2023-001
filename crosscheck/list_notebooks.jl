@@ -2,6 +2,7 @@ using Pkg
 Pkg.activate(joinpath(@__DIR__, ".."))
 Pkg.instantiate()
 # 
+Pkg.add("Pluto")
 using Pluto
 
 # make sure the script is located in the notebooks folder
