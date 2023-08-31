@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+</head>
+<body>
+<h1 id="analysis-of-rescattering-effects-in-3pi-final-states">Analysis of rescattering effects in <span class="math inline">3<em>π</em></span> final states</h1>
+<p><a href="https://github.com/mmikhasenko/rescattering-3pi-2023-001"><img src="https://img.shields.io/badge/GitHub-README.md-yellowgreen" alt="GitHub page" /></a> <a href="https://inspirehep.net/literature/2617378"><img src="https://img.shields.io/badge/article-%20hep--ph%3A2212.11767-brightgreen" alt="arXiv article" /></a></p>
+<p>Decays into three particles are often described in terms of two-body resonances and a non-interacting spectator particle. To go beyond this simplest isobar model, crossed-channel rescattering effects need to be accounted for. We quantify the importance of these rescattering effects in three-pion systems for different decay masses and angular-momentum quantum numbers. We provide the amplitude decompositions for four decay processes with total <span class="math inline"><em>J</em><sup><em>P</em><em>C</em></sup> = 0<sup> − −</sup></span>, <span class="math inline">1<sup> − −</sup></span>, <span class="math inline">1<sup> − +</sup></span>, and <span class="math inline">2<sup> + +</sup></span>, all of which decay predominantly as <span class="math inline"><em>ρ</em><em>π</em></span> states. Two-pion rescattering is described in terms of an Omn{`e}s function, which incorporates the <span class="math inline"><em>ρ</em></span> resonance. Inclusion of crossed-channel effects is achieved by solving the Khuri–Treiman integral equations. The unbinned log-likelihood estimator is used to determine the significance of the rescattering effects beyond two-body resonances; we compute the minimum number of events necessary to unambiguously find these in future Dalitz-plot analyses. Kinematic effects that enhance or dilute the rescattering are identified for the selected set of quantum numbers and various masses.</p>
+<h2 id="code">Code</h2>
+<p>The main numerics is done with c++/python code which can be found in the repository <a href="https://github.com/HISKP-ph/khuri_treiman_solver"><code>HISKP-ph/khuri_treiman_solver</code></a>.</p>
+<h3 id="julia-code">Julia code</h3>
+<ul>
+<li><a href="https://github.com/mmikhasenko/rescattering-3pi-2023-001/tree/main/KTMC.jl/src"><code>KTMC.jl/scr</code></a> source code the Khuri-Treiman Monte-Carlo project</li>
+<li><a href="https://github.com/mmikhasenko/rescattering-3pi-2023-001/tree/main/KTMC.jl/scripts"><code>KTMC.jl/scripts</code></a> several exploratory scripts for the project</li>
+<li><a href="https://github.com/mmikhasenko/rescattering-3pi-2023-001/tree/main/KTMC.jl/plots"><code>KTMC.jl/plots</code></a> preliminary plots</li>
+</ul>
+<h3 id="pluto-notebooks-julia">Pluto notebooks (Julia)</h3>
+<ul>
+<li><a href="crosscheck/N-001-cartesian-pions.html"><code>N-001-cartesian-pions</code></a> <a href="https://github.com/mmikhasenko/rescattering-3pi-2023-001/blob/main/crosscheck/N-001-cartesian-pions.jl">[code]</a> Relation of the physical decay to the isospin amplitudes in cartesian coordinates</li>
+<li><a href="crosscheck/N-002-covariant3pi.html"><code>N-002-covariant3pi</code></a> <a href="https://github.com/mmikhasenko/rescattering-3pi-2023-001/blob/main/crosscheck/N-002-covariant3pi.jl">[code]</a> Evaluation of the covariant structures in the s-channel</li>
+<li><a href="crosscheck/N-003-omega.html"><code>N-003-omega</code></a> <a href="https://github.com/mmikhasenko/rescattering-3pi-2023-001/blob/main/crosscheck/N-003-omega.jl">[code]</a> early-stage MC experiments on discriminating models</li>
+</ul>
+</body>
+</html>
